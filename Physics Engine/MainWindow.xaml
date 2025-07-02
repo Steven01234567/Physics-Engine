@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="Physics Engine" Height="450" Width="800" WindowState="Maximized">
     <Grid>
-
+        <Button Content="Hello"/>
     </Grid>
 </Window>

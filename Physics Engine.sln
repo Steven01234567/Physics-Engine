@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36221.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Physics Engine", "Physics Engine\Physics Engine.csproj", "{04EF74F6-CB5E-403B-9762-03EF3B117B23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Views", "Physics Engine\Views.csproj", "{04EF74F6-CB5E-403B-9762-03EF3B117B23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{7A3CE4C9-D488-4CA2-B3CF-160CC6113555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{78D68504-0C4B-41B0-A708-4E3C3E0CEC80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{04EF74F6-CB5E-403B-9762-03EF3B117B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04EF74F6-CB5E-403B-9762-03EF3B117B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04EF74F6-CB5E-403B-9762-03EF3B117B23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A3CE4C9-D488-4CA2-B3CF-160CC6113555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A3CE4C9-D488-4CA2-B3CF-160CC6113555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A3CE4C9-D488-4CA2-B3CF-160CC6113555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A3CE4C9-D488-4CA2-B3CF-160CC6113555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78D68504-0C4B-41B0-A708-4E3C3E0CEC80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D68504-0C4B-41B0-A708-4E3C3E0CEC80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D68504-0C4B-41B0-A708-4E3C3E0CEC80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D68504-0C4B-41B0-A708-4E3C3E0CEC80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
