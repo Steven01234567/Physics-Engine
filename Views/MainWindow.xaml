@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:Views"
         mc:Ignorable="d"
         Title="Physics Engine" Height="450" Width="800" WindowState="Maximized">
-    <Grid>
-        <TextBox Text="{Binding Entity.EntityShape.XCoordinate}"/>
-    </Grid>
+    <Viewbox>
+        <Grid>
+            <Canvas Background="SkyBlue" Width="1000" Height="500">
+                <Rectangle Width="100" 
+                           Height="100"
+                           Fill="Green"
+                           Stroke="Black"
+                           StrokeThickness="2"
+                           Canvas.Left="100"
+                           Canvas.Top="100"/>
+            </Canvas>
+        </Grid>
+    </Viewbox>
 </Window>

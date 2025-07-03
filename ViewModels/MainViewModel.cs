@@ -16,7 +16,7 @@ namespace ViewModels
 
         public MainViewModel()
         {
-            _entity = new BaseEntity(new BaseShape(1, 2, 3, 4));
+            _entity = new BaseEntity();
         }
     }
 }

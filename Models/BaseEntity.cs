@@ -23,9 +23,16 @@ namespace Models
             }
         }
 
-        public BaseEntity(BaseShape shape)
+        public BaseEntity(BaseShape? shape = null)
         {
-            _entityShape = shape;
+            if (shape == null)
+            {
+                _entityShape = new BaseShape();
+            }
+            else
+            {
+                _entityShape = shape;
+            }
         }
     }
 }
