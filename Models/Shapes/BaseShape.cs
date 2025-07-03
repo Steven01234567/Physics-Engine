@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Entity
+    public class BaseShape
     {
         /// private variables
+
         private int _xCoordinate;
         private int _yCoordinate;
-        private int _height;
         private int _width;
+        private int _height;
+
+
 
         /// public variables
+        
         public int XCoordinate
         {
             get => _xCoordinate;
@@ -31,14 +35,6 @@ namespace Models
                 _yCoordinate = value;
             }
         }
-        public int Height
-        {
-            get => _height;
-            set
-            {
-                _height = value;
-            }
-        }
         public int Width
         {
             get => _width;
@@ -47,13 +43,25 @@ namespace Models
                 _width = value;
             }
         }
+        public int Height
+        {
+            get => _height;
+            set
+            {
+                _height = value;
+            }
+        }
 
-        public Entity(int xCoordinate = 0, int yCoordinate = 0, int height = 1, int width = 1)
+
+
+        /// Constructor
+
+        public BaseShape(int xCoordinate = 0, int yCoordinate = 0, int width = 1, int height = 1)
         {
             _xCoordinate = xCoordinate;
             _yCoordinate = yCoordinate;
-            _height = height;
             _width = width;
+            _height = height;
         }
     }
 }
