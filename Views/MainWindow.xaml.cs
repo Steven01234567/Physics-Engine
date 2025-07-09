@@ -17,10 +17,13 @@ namespace Views
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly MainViewModel _viewModel = new MainViewModel();
+
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new MainViewModel();
+
+            DataContext = _viewModel;
         }
     }
 }

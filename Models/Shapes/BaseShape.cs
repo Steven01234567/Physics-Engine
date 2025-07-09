@@ -10,8 +10,6 @@ namespace Models.Shapes
     {
         /// private variables
 
-        private int _xCoordinate;
-        private int _yCoordinate;
         private int _width;
         private int _height;
 
@@ -19,24 +17,6 @@ namespace Models.Shapes
 
         /// public variables
         
-        public int XCoordinate
-        {
-            get => _xCoordinate;
-            set
-            {
-                _xCoordinate = value;
-                OnPropertyChanged(nameof(XCoordinate));
-            }
-        }
-        public int YCoordinate
-        {
-            get => _yCoordinate;
-            set
-            {
-                _yCoordinate = value;
-                OnPropertyChanged(nameof(YCoordinate));
-            }
-        }
         public int Width
         {
             get => _width;
@@ -60,10 +40,8 @@ namespace Models.Shapes
 
         /// Constructor
 
-        public BaseShape(int xCoordinate = 0, int yCoordinate = 0, int width = 1, int height = 1)
+        public BaseShape(int width = 1, int height = 1)
         {
-            _xCoordinate = xCoordinate;
-            _yCoordinate = yCoordinate;
             _width = width;
             _height = height;
         }
