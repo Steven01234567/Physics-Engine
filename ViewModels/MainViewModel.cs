@@ -1,22 +1,24 @@
 ﻿using Models;
+using System.Collections.ObjectModel;
 
 namespace ViewModels
 {
-    public class MainViewModel
+    public class MainViewModel : BaseNotification
     {
-        private BaseEntity _entity;
-        public BaseEntity Entity
+        private ObservableCollection<BaseEntity> _entities;
+        public ObservableCollection<BaseEntity> Entities
         {
-            get => _entity;
+            get => _entities;
             set
             {
-                _entity = value;
+                _entities = value;
+                OnPropertyChanged(nameof(Entities));
             }
         }
 
         public MainViewModel()
         {
-            _entity = new BaseEntity();
+            _entities = new ObservableCollection<BaseEntity>();
         }
     }
 }

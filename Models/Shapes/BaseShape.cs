@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models.Shapes
 {
-    public class BaseShape
+    public class BaseShape : BaseNotification
     {
         /// private variables
 
@@ -25,6 +25,7 @@ namespace Models.Shapes
             set
             {
                 _xCoordinate = value;
+                OnPropertyChanged(nameof(XCoordinate));
             }
         }
         public int YCoordinate
@@ -33,6 +34,7 @@ namespace Models.Shapes
             set
             {
                 _yCoordinate = value;
+                OnPropertyChanged(nameof(YCoordinate));
             }
         }
         public int Width
@@ -41,6 +43,7 @@ namespace Models.Shapes
             set
             {
                 _width = value;
+                OnPropertyChanged(nameof(Width));
             }
         }
         public int Height
@@ -49,6 +52,7 @@ namespace Models.Shapes
             set
             {
                 _height = value;
+                OnPropertyChanged(nameof(Height));
             }
         }
 

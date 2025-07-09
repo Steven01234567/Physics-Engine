@@ -7,7 +7,7 @@ using Models.Shapes;
 
 namespace Models
 {
-    public class BaseEntity
+    public class BaseEntity : BaseNotification
     {
         /// private variables
 
@@ -20,6 +20,7 @@ namespace Models
             set
             {
                 _entityShape = value;
+                OnPropertyChanged(nameof(EntityShape));
             }
         }
 
