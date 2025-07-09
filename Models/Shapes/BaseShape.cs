@@ -40,7 +40,7 @@ namespace Models.Shapes
 
         /// Constructor
 
-        public BaseShape(int width = 1, int height = 1)
+        public BaseShape(int width = 100, int height = 100)
         {
             _width = width;
             _height = height;

@@ -6,7 +6,7 @@ namespace ViewModels
     public class MainViewModel : BaseNotification
     {
 
-        public ObservableCollection<BaseEntity> Entities;
+        public ObservableCollection<BaseEntity> Entities { get; set; }
 
 
 

@@ -7,16 +7,31 @@
         mc:Ignorable="d"
         Title="Physics Engine" Height="450" Width="800" WindowState="Maximized">
     <Viewbox>
-        <Grid>
-            <Canvas Background="SkyBlue" Width="1000" Height="500">
-                <Rectangle Width="100" 
-                           Height="100"
-                           Fill="Green"
-                           Stroke="Black"
-                           StrokeThickness="2"
-                           Canvas.Left="100"
-                           Canvas.Top="100"/>
-            </Canvas>
+        <Grid Background="Black">
+            <ItemsControl ItemsSource="{Binding Entities}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Canvas Background="SkyBlue" Width="1000" Height="500"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+
+                <ItemsControl.ItemContainerStyle>
+                    <Style TargetType="ContentPresenter">
+                        <Setter Property="Canvas.Left" Value="{Binding XCoordinate}"/>
+                        <Setter Property="Canvas.Top" Value="{Binding YCoordinate}"/>
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Rectangle Width="{Binding EntityShape.Width}" 
+                                   Height="{Binding EntityShape.Height}"
+                                   Fill="Green"
+                                   Stroke="Black"
+                                   StrokeThickness="2"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </Grid>
     </Viewbox>
 </Window>
