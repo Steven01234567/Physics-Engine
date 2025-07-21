@@ -15,8 +15,8 @@ namespace ViewModels
         public MainViewModel()
         {
             Entities = new ObservableCollection<BaseEntity>();
-            Entities.Add(new BaseEntity(100, 100));
-            Entities.Add(new BaseEntity(200, 200));
+            Entities.Add(new BaseEntity(100, 100, 50, 50));
+            Entities.Add(new BaseEntity(200, 200, 100, 100));
         }
     }
 }

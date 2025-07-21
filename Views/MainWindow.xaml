@@ -24,8 +24,8 @@
 
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Rectangle Width="{Binding EntityShape.Width}" 
-                                   Height="{Binding EntityShape.Height}"
+                        <Rectangle Width="{Binding Width}" 
+                                   Height="{Binding Height}"
                                    Fill="Green"
                                    Stroke="Black"
                                    StrokeThickness="2"/>
